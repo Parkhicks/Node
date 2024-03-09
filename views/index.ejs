@@ -1,0 +1,35 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Directory</title>
+</head>
+<body>
+  <h1>Student Directory</h1>
+
+  <!-- Search Form -->
+  <form action="/search" method="post">
+    <label for="query">Search by Name:</label>
+    <input type="text" id="query" name="query" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Search Results -->
+  <% if (results && results.length > 0) { %>
+    <ul>
+      <% results.forEach(student => { %>
+        <li>
+          <img src="<%= student.picture %>" alt="<%= student.name %>">
+          <h2><%= student.name %></h2>
+          <p><a href="<%= student.website %>" target="_blank">Visit Website</a></p>
+          <p><a href="<%= student.resume %>" target="_blank">View Resume</a></p>
+        </li>
+      <% }); %>
+    </ul>
+  <% } else if (results) { %>
+    <p>No results found.</p>
+  <% } %>
+</body>
+</html>
