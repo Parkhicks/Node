@@ -29,3 +29,13 @@ app.post('/search', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+app.post('/search', (req, res) => {
+    const query = req.body.searchQuery; // Assuming you have a form field named "searchQuery"
+  
+    // Your logic to filter students based on the search query
+    const results = students.filter(student => student.name.toLowerCase().includes(query.toLowerCase()));
+  
+    // Render the main page with search results
+    res.render('index', { results }); // Pass the results variable to the template
+  });
