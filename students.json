@@ -1,0 +1,23 @@
+[
+    {
+      "name": "John Doe",
+      "picture": "images/john-doe.jpg",
+      "phone": "123-456-7890",
+      "resume": "files/john-doe.pdf",
+      "linkedin": "https://www.linkedin.com/feed/"
+    },
+    {
+        "name": "Parker Hicks",
+        "picture": "images/parker-hicks.jpg",
+        "phone": "801-815-3505",
+        "resume": "files/parker-hicks.pdf",
+        "linkedin": "https://www.linkedin.com/feed/"
+    },
+    {
+        "name": "Matt Hamilton",
+        "picture": "images/matt-hamilton.jpg",
+        "phone": "555-123-4567",
+        "resume": "files/matt-hamilton.pdf",
+        "linkedin": "https://www.linkedin.com/feed/"
+    }
+]
