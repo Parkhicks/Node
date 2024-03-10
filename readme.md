@@ -6,7 +6,11 @@ This was my first ever attempt and exposure to server side computer programming,
 
 What I ended up going for was a very basic college website where it features different students, the students each have their picture, resume, phone number, and a link to their linkedin profile. The server side programming would come into affect as the students.json, files, and images would all be stored on a server that would then be passed through as the appropriate pages are navigated to. In the end after all my efforts it never got working, for some reason it doesn't want to work, I've tried troubleshooting it with my own understanding as well as with both chat GPT and Gemini but I haven't gotten it anywhere in two hours so this is where I'm leaving it. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+heres a link to my other github repo with the tutorial follow along with it:
+
+https://github.com/Parkhicks/node-ex-website
+
+https://www.loom.com/share/150493a28aaf48748c22960911cc0411
 
 # Web Pages
 
